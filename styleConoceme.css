@@ -43,14 +43,18 @@ button {
     font-family: 'Alegreya', serif;
     font-weight: 600;
     font-size: x-large;
-    border: 4px;
     border-color: gold;
     border-radius: 10px;
     inline-size: 10em;
     width: 6em;
     height: 2em;
     color: black;
-
+}
+#boton1 {
+    margin-right: 1em;
+}
+#boton2 {
+    margin-left: 1em;
 }
 .container {
     display: flex;
