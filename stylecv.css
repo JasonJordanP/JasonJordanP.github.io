@@ -97,6 +97,8 @@ h2{
   background-color: rgb(222,227,230);
   color: rgb(158,118,0);
   transform: rotate(1deg);
+  /*z-index: 1; sirve para superponer
+  scale PARA QUE SE ACERQUE EL BOTON*/
 }
 .row {
   align-items: flex-start;
