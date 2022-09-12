@@ -57,6 +57,7 @@ h2{
     font-family: 'Alegreya', serif;
     color: rgb(181,147,46);
     font-size: xx-large;
+
   }
   #p2{
     font-family: 'Alegreya', serif;
@@ -128,4 +129,56 @@ h3 {
 }
 i {
   margin-right: 2%; 
+}
+footer{
+  align-content: center;
+  margin-top: 2em;
+  padding-left: 8em;
+}
+.social a{
+  display: inline-block;
+  position: relative;
+  padding: 0px 5px;
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: .6s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+  overflow: hidden;
+}
+.social .fa-brands{
+
+  font-size: 25px;
+  line-height: 40px;
+  transition: .6s;
+  position: relative;
+}
+.social .fa-solid{
+  font-size: 25px;
+  line-height: 40px;
+  transition: .6s;
+  position: relative;
+}
+
+#fb{
+  color: rgb(72,103,170);
+}
+#ig{
+  color: rgb(245,2,199);
+}
+#wapp{
+  color: rgb(62,186,78);
+}
+#linkedin{
+  color: rgb(9,97,184);
+}
+#gmail{
+  color:rgb(175,36,28)
+}
+#github{
+  color:rgb(22,27,34)
 }
