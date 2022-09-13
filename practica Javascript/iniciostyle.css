@@ -13,6 +13,7 @@ body{
 h1{
     color: #e23d75;
     font-family:'Kanit', sans-serif;
+    padding-left: 2em;
 }
 button{
     color: white;
@@ -23,8 +24,8 @@ button{
     font-size: large;
     font-family: 'Kanit', sans-serif;
     padding: 0.5em;
-    margin-top: 3em;
-    margin-left: 9em;
+    margin-top: 1em;
+    margin-left: 12em;
 }
 #cont1{
     font-family: 'Averia Serif Libre', cursive;
