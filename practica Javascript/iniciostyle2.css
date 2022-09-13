@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@1,300&display=swap');
+
+body{
+    background-image: url(img/calculadora.jpg);
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 1em;    
+}
+h1{
+    color: #e23d75;
+    font-family:'Kanit', sans-serif;
+    padding-left: 20%;
+    width: fit-content;
+}
+button{
+    color: white;
+    background-color: #e23d75;
+    border-radius: 5px;
+    border-color: #e23d75;
+    font-size: large;
+    font-family: 'Kanit', sans-serif;
+    margin-top: 5%;
+    left: 33%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 15px 30px;
+    overflow: hidden;
+    display: flex;
+    transition: 0.2s;
+}
+
+button:hover{
+    background: #e23d75;
+    box-shadow: 0 0 3px #e23d75, 0 0 10px #e23d75, 0 0 20px #e23d75;
+    transition-delay: 0.1s;
+ }
+button span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#f174b9);
+}
+button:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+#span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#f174b9);
+}
+button:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#f174b9);
+}
+button:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#f174b9);
+}
+button:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+#cont1{
+    font-family: 'Averia Serif Libre', cursive;
+    color: #4f1229;
+    font-weight: bold;
+    font-size: larger;
+    margin-bottom: 1em;
+}

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="iniciostyle.css">
+    <link rel="stylesheet" href="iniciostyle2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Practica JS</title>
 </head>
 <body>
@@ -14,21 +15,29 @@
         <div id="cont1"></div>
 
         <script src="inicio.js" ></script>
-        <div class="boton container-fluid">
-            <button type="submit" class="button" value="sumar" id="boton">Realizar una suma</button>
+    
+    <div class="container container-fluid">
+        <div class="boton">
+            <button type="submit" class="button" value="sumar" id="boton">
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+                <span id="span4"></span>
+                Realizar una suma   
+            </button>
 
             <script>
                 function miCalculadora() {
                 let nombre = prompt ("Ingrese su nombre completo");
                 console.log(nombre);
 
-                let numero1 = prompt ("Ingrese su número preferido");
+                let numero1 = prompt ("Ingrese el primer número");
                 console.log(numero1);
 
-                let numero2 = prompt ("Ingrese un número al azar");
+                let numero2 = prompt ("Ingrese el segundo número");
                 console.log(numero2);
 
-                alert ("Hola " + nombre + " bienvenido a la página");
+                alert ("Hola " + nombre + " bienvenido(a) a la página");
 
                 let resultado1 = parseInt(numero1) + parseInt(numero2);
                 let resultadofinal = parseInt(resultado1) + parseInt(nombre.length);
@@ -44,7 +53,7 @@
                    }
 
             </script>
-                     
+        </div>             
         </div>
     </div>
 </body>
