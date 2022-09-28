@@ -1,0 +1,276 @@
+<<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>Ejercicios Javascript clase 7</h1>
+        
+        <script>
+            /*EJERCICIO 1: ● Crear un programa que pida al usuario ingresar
+            por separado, la calle, el número, el departamento, el código postal, 
+            la ciudad y el país, y muestre un mensaje con toda la dirección completa.
+
+            let calle = prompt("Ingrese la calle de su domicilio");
+            let numero = prompt("Ingrese el número de su domicilio");
+            let dpto = prompt("Indique su departamento - por ejemplo: 4D");
+            let codPostal = prompt("Ingrese su código postal");
+            let ciudad = prompt("Indique la ciudad en la que reside");
+            let pais = prompt("Indique en qué país vive");
+
+            console.log("La dirección que usted ha ingresado es: " + calle + numero + dpto + ","+ codPostal + "," + ciudad + "," + pais); 
+            document.write("La dirección que usted ha ingresado es: " + calle + numero + dpto + ","+ codPostal + "," + ciudad + "," + pais); 
+            */
+            //---------------------------------------------------------------------------------------
+
+            /*EJERCICIO 2: ● Crear un programa que pida ingresar una edad y devuelva el equivalente de esa
+            edad en años perro.
+                
+            let edad = prompt("Ingrese la edad a convertir en años perrunos");
+            let aniosPerrunos= edad * 7;
+            
+            console.log("La edad que usted ingresó equivaldría a " + aniosPerrunos +" años para un perro");
+            document.write("La edad que usted ingresó equivaldría a " + aniosPerrunos +" años para un perro");
+            */
+
+            //---------------------------------------------------------------------------------------
+
+            /*EJERCICIO 3: ● Crear un programa que pida ingresar una cantidad en minutos mediante un cartel
+            y muestre un mensaje con el resultado de la conversión en segundos.
+            
+
+            let minutos = prompt("Ingrese los minutos que desea convertir en segundos");
+            let segundos= minutos * 60;
+
+            console.log("Los minutos que indicó, convertidos a segundos dan un total de: " + segundos + " segundos");
+            document.write("Los minutos que indicó, convertidos a segundos dan un total de: " + segundos + " segundos");
+            */
+
+            //---------------------------------------------------------------------------------------
+
+            /*EJERCICIO 4: ● Crear un programa que pida ingresar una cantidad de kilómetros 
+            y muestre un mensaje con el resultado de la conversión en millas.
+
+            let km = prompt("Indique la cifra de kilómetros a convertir");
+            let mill = km * 0.621371;
+
+            console.log(km + "kms convertidos a millas equivalen a: " + mill + " millas");
+            document.write(km + "kms convertidos a millas equivalen a: " + mill + " millas");
+            */
+            
+            //---------------------------------------------------------------------------------------
+
+            /*EJERCICIO 5:● Crear un programa que pida al usuario ingresar el valor de la base y 
+            el valor de la altura de un triangulo, calcular su área y mostrarlo en un mensaje.
+            
+
+            let base = prompt("Ingrese el valor de la base del triángulo");
+            let altura = prompt("Indique la altura de dicho triángulo");
+
+            let area = (base * altura)/2;
+            console.log("El área del triángulo es igual a: " + area);
+            document.write("El área del triángulo es igual a: " + area);
+            */
+
+            //---------------------------------------------------------------------------------------
+
+            /*EJERCICIO 6:● Crear un programa que pida al usuario ingresar el valor de la altura y 
+            el valor del ancho de un rectángulo, calcular su perímetro y mostrarlo en un mensaje.
+               
+            
+            let altura = prompt("Indique la altura del rectángulo");
+            let ancho = prompt("Especifique el ancho del mismo");
+
+            let perímetro = (2*altura) + (2*ancho);
+            console.log("El perímetro de su rectángulo es: " + perímetro);
+            document.write("El perímetro de su rectángulo es: " + perímetro);(
+             */
+
+             //--------------------------------------------------------------------------------------
+
+             /*EJERCICIO 7:● Crear un programa que pida al usuario ingresar un número, y luego el porcentaje 
+             que se desea obtener del mismo. Devolver un mensaje que muestre el porcentaje de dicho número.
+
+             let num1 = prompt("Porfavor ingrese el número del cual desea saber cierto porcentaje");
+             let num2 = prompt("Ingrese el porcentaje que desea obtener del primer número");
+
+             let porcent = (num2/num1)*100;
+
+             console.log("El " +num2+ "% de " +num1+ " es: " + porcent);
+             document.write("El " +num2+ "% de " +num1+ " es: " + porcent);
+
+            */
+           
+            //--------------------------------------------------------------------------------------------
+
+            /*EJERCICIO 8:●	Crear un programa que pida al usuario la distancia de su recorrido y 
+            mostrar en un mensaje cuánto tiempo tardaría en completar el recorrido en distintos medios de transporte, 
+            definiendo de antemano distintas velocidades para distintos medios de transporte.
+
+            let distancia = prompt("Indique en kilómetros la distancia de su viaje");
+            let transporte = prompt("Seleccione con el número indicado, su medio de transporte para realizar dicho viaje: 1-Pie (5km/h), 2-Bicicleta (30km/h), 3-Automóvil (60km/h), 4- Motocicleta (80km/h)" );
+            
+            switch (transporte) {
+                case "1": 
+                let duracion = (distancia / 5);
+                console.log("Si va a pie, la duración del viaje será de " + duracion + " horas.");
+                document.write("Si va a pie, la duración del viaje será de " + duracion + " horas.");
+                break;
+
+                case "2":
+                let duracion2 = (distancia / 30);
+                console.log("Si viaja en bicicleta, llegará a su destino en " + duracion2 + " horas.");
+                document.write("Si viaja en bicicleta, llegará a su destino en " + duracion2 + " horas.");
+                break;
+
+                case "3":
+                let duracion3 = (distancia / 60);
+                console.log("Si viaja en auto, llegará a su destino en " + duracion3 + " horas.");
+                document.write("Si viaja en auto, llegará a su destino en " + duracion3 + " horas.");
+                break;
+
+                case "3":
+                let duracion4 = (distancia / 80);
+                console.log("Si viaja en moto, llegará a su destino en " + duracion4 + " horas.");
+                document.write("Si viaja en moto, llegará a su destino en " + duracion4 + " horas.");
+                break;
+                
+                default:
+                console.log("Elija una de las opciones");
+                break;
+            }
+            */
+
+            //--------------------------------------------------------------------------------------------
+
+            /* EJERCICIO 9: ● Crear un programa que pida al usuario ingresar, por separado, 
+            3 destinos de las escalas de un vuelo, y la duración de cada uno de ellos. 
+            Al final debe mostrar un mensaje que liste todas las escalas con su duración y la duración total del vuelo.
+            
+
+            let dest1 = prompt("Ingrese la primera escala de su vuelo");
+            let dur1 = prompt("Indique la duración del vuelo hasta dicha escala - por ejemplo: 4");
+            let dest2 = prompt("Ingrese la segunda escala de su vuelo");
+            let dur2 = prompt("Indique la duración del vuelo desde la primera hasta la segunda escala - por ejemplo: 4");
+            let dest3 = prompt("Ingrese la tercera y última escala de su vuelo");
+            let dur3 = prompt("Indique la duración del vuelo desde la segunda hasta la última escala - por ejemplo: 4");
+
+            let tramo1 = (dest1 + " " + dur1 + " hora(s)");
+            let tramo2 = (dest2 + " " + dur2 + " hora(s)");
+            let tramo3 = (dest3 + " " + dur3 + " hora(s)");
+
+            let durTotal = Number(dur1) + Number(dur2) + Number(dur3);
+            alert(tramo1 + "\n" + tramo2 + "\n" + tramo3);
+            alert("La duración total de su vuelo será de: " + durTotal + " horas.");
+            */
+            
+            //--------------------------------------------------------------------------------------------
+
+            /* EJERCICIO 10: ● Crear un programa que pida ingresar una número de partida y una cantidad a ir incrementando 
+            y mostrar cinco mensajes seguidos que muestren el número del mensaje y el total incrementado hasta el momento 
+
+            let num1 = prompt("Ingrese un número inicial");
+            let incremento = prompt("Indique la cantidad a sumar");
+
+            let resultado = Number(num1) + Number(incremento);
+            alert("Incremento 1) Total: " + resultado + ".");
+
+            let resultado2= Number(resultado) + Number(incremento);
+            alert("Incremento 2) Total: " + resultado2 + ".");
+
+            let resultado3= Number(resultado2) + Number(incremento);
+            alert("Incremento 3) Total: " + resultado3 + ".");
+
+            let resultado4= Number(resultado3) + Number(incremento);
+            alert("Incremento 4) Total: " + resultado4 + ".");
+
+            let resultado5= Number(resultado4) + Number(incremento);
+            alert("Incremento 5) Total: " + resultado5 + ".");
+
+            */
+
+            //--------------------------------------------------------------------------------------------
+
+            /*EJERCICIO 11: ● Crear un programa que pida ingresar una cantidad de grados Celsius 
+            y muestre un mensaje con el resultado de la conversión a grados Fahrenheit.
+
+            let cel= prompt("Ingrese una cantidad de grados Celcius a convertir en grados Fahrenheit");
+            let faren= (Number(cel) * 1.8) + 32;
+
+            document.write("El resultado es: "+ faren + " F°.");
+
+             */
+
+             //--------------------------------------------------------------------------------------------
+
+            /*EJERCICIO 12: ● Crear un programa que pida al usuario un número, luego otro y mostrar 
+            en un mensaje si el primer valor es múltiplo del segundo. 
+
+            let num1= prompt("Ingrese un número");
+            let num2= prompt("Ingrese otro número");
+
+            if (Number(num1)%Number(num2) == 0) {
+                document.write("El primer número ingresado es múltiplo del segundo.");
+            } else {
+                document.write("El primer número ingresado no es múltiplo del segundo.");
+            }
+
+            */
+
+             //--------------------------------------------------------------------------------------------
+
+            /*EJERCICIO 13: ● Crear un programa que pida ingresar una cantidad en segundos y muestre un mensaje
+             con el resultado de la conversión en horas, minutos y segundos que corresponde a esa cantidad 
+             (p.ej. 3602 segundos = 1 hora 2 segundos). (Usar operador módulo)
+             */
+            
+             let seg = prompt ("Ingrese la cantidad de segundos que desea convertir");
+
+             let resultadoFinal = calculoTime(seg);
+
+            function calculoTime (seg) {
+             let horas = Number(seg)/3600;
+             seg %= 3600;
+
+             let min= Number(seg)/60;
+             seg %= 60;
+
+             let tiempo = [parseInt(horas), parseInt(min), parseInt(seg)]; 
+
+            return tiempo;
+            }
+
+            console.log(resultadoFinal);
+
+            document.write(seg + " segundos equivalen a: "+ resultadoFinal[0]+ " horas, "+ resultadoFinal[1]+ " minutos y "+ resultadoFinal[2]+ " segundos.");
+            
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
