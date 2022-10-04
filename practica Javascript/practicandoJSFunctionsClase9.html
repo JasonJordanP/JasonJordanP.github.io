@@ -1,0 +1,564 @@
+<<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <script>
+            /* 1- Crear un programa que muestre en consola los números impares entre el 0 y el 20
+
+                for (let i=0; i<20; i++) {
+                    if (i % 2 != 0) { 
+                        console.log(i);
+                    }}
+            */
+           //-----------------------------------------------------------------------------------
+
+           /* 2- Crear un programa que pida al usuario ingresar el nombre de una playlist y cuántas 
+           canciones desea agregar a la misma. Luego debe ir pidiendo agregar la cantidad de canciones 
+           elegidas de a una. Se debe ir mostrando la cantidad de canciones que quedan por agregar y 
+           la playlist con los temas hasta el momento a medida que se va a actualizando. 
+           Al finalizar mostrar un mensaje con el nombre de la playlist y la lista de canciones. 
+
+                const name = prompt("Ingrese el nombre de su playlist");
+                const cantidad = prompt("Indique la cantidad de canciones que tendrá la misma");
+                
+                let playlist = [];
+
+                while (playlist.length <= Number(cantidad)) {
+                let song = prompt("Ingrese el nombre de la canción a agregar");
+
+                let agregar = playlist.push(song);
+                
+                let porAgregar = (Number(cantidad) - Number(playlist.length));
+                
+                alert("La playlist " + name + " tiene los siguientes elementos: " 
+                + playlist + " Todavía debe agregar " + porAgregar + " cancion(es).");
+                
+                if (porAgregar == 0) {
+                    break;
+                }
+                }
+
+                alert("La playlist " + name + " tiene los siguientes elementos: " + playlist);
+            */
+
+            //-----------------------------------------------------------------------------------
+
+            /* 3- Crear un programa que pregunte si se desea buscar el mayor o 
+            el menor número de un conjunto. Luego, preguntar entre cuántos se desea buscar. 
+            Ir pidiendo ingresar uno por uno la cantidad de números que se eligió, y al finalizar
+             mostrar el número mayor o menor de todos los ingresados según el elegido. 
+
+            const opcion = prompt("¿Desea saber el número mayor o menor? Indique a continuación:");
+            const cantidad = prompt("¿Entre cuántos elementos desea realizar la búsqueda?");
+
+            let lista = [];
+
+            
+            while (lista.length <= Number(cantidad)) {
+                let numero = prompt("Ingrese un número al azar");
+                let agregar = lista.push(numero);
+                if (Number(cantidad) - lista.length == 0 ) {
+                    break
+                }
+            }
+            console.log(lista);
+
+            if (opcion === "mayor") {
+                document.write("El mayor número de la lista es: " + Math.max(...lista) + ".");
+                console.log("El mayor número de la lista es: " + Math.max(...lista) + ".");
+            } else if (opcion === "menor") {
+                document.write("El menor número de la lista es: " + Math.min(...lista) + ".");
+                console.log("El menor número de la lista es: " + Math.min(...lista) + ".")
+            }
+            */
+
+            //----------------------------------------------------------------------------------
+
+            /* 4- Crear un programa que pida ingresar un número, y muestre su factorial. 
+            Este se calcula multiplicando el mismo número y todos los números que le anteceden hasta el 1.
+            Por ejemplo: 4 ⇒ 4 _ 3 _ 2 * 1 = 24 
+
+            let num = parseInt(prompt("Ingrese un número"));
+            alert("A continuación se mostrará su factorial");
+            let facto = 1;
+        
+            for (let i = 1; i <= num ; i++) {
+                facto = facto * i;
+            }
+            document.write("El factorial de " + num + " es igual a: " +facto);
+            */
+             
+           /* 5- Al ejercicio de Piedra, papel, tijera de condicionales, 
+            agregarle la posibilidad de jugar la cantidad de rondas que se deseen. 
+            Por cada ronda, se debe mostrar ambas jugadas (usuario y computadora), quién gano la ronda, 
+            puntaje parcial hasta el momento y rondas restantes. Al finalizar se debe indicar quién ganó.
+                        
+            let inicio = 1;
+            let final = 3;
+
+            let partidas = parseInt(prompt("Determine en números cuántas partidas sea jugar."));
+
+            let winsPlayer = 0;
+            let winsCompu = 0;
+            let rondas = 0;
+
+            let i= 0
+            while (i<partidas) { 
+                let jugadora = prompt("Elija el número que la opción que prefiere: 1- Piedra. 2- Papel. 3-Tijera");
+                let computadora = inicio + Math.floor(Math.random()* final);
+
+            if (jugadora == 1 && computadora == 1) {
+                rondas++;
+                console.log ("Rondas jugadas: " + rondas+ " de " + partidas + ".\n 🙍‍♀️ Jugadora: Piedra.\n 👾Computadora: Piedra. \n Se produjo un empate! \n Puntaje: \n El puntaje es: Jugadora - " + winsPlayer + ". Computadora - " + winsCompu + ".");
+                
+                
+            } else if (jugadora == 1 && computadora == 2) {
+                rondas++;
+                winsCompu++;
+                console.log ("Rondas jugadas: " + rondas+ " de " + partidas + ".\n 🙍‍♀️ Jugadora: Piedra.\n 👾Computadora: Papel. \n Computadora ha ganado esta ronda. \n El puntaje es: Jugadora - " + winsPlayer + ". Computadora - " + winsCompu + ".");
+                
+            } else if (jugadora == 1 && computadora == 3) {
+                rondas++;
+                winsPlayer++;
+                console.log ("Rondas jugadas: " + rondas+ " de " + partidas + ".\n 🙍‍♀️ Jugadora: Piedra.\n 👾Computadora: Tijera. \n Usted ganó esta ronda!🎉 \n El puntaje es: Jugadora - " + winsPlayer + ". Computadora - " + winsCompu + ".");
+               
+            } else if (jugadora == 2 && computadora == 1) {
+                rondas++;
+                winsPlayer++;                
+                console.log ("Rondas jugadas: " + rondas+ " de " + partidas + ".\n 🙍‍♀️ Jugadora: Papel.\n 👾Computadora: Piedra. \n Usted ganó esta ronda!🎉 \n El puntaje es: Jugadora - " + winsPlayer + ". Computadora - " + winsCompu + ".");
+                
+            } else if (jugadora == 2 && computadora == 2) {
+                rondas++;
+                console.log ("Rondas jugadas: " + rondas+ " de " + partidas + ".\n 🙍‍♀️ Jugadora: Papel.\n 👾Computadora: Papel. \n Se produjo un empate! \n El puntaje es: Jugadora - " + winsPlayer + ". Computadora - " + winsCompu + ".");
+                
+            }  else if (jugadora == 2 && computadora == 3) {
+                rondas++;
+                winsCompu++;
+                console.log ("Rondas jugadas: " + rondas+ " de " + partidas + ".\n 🙍‍♀️ Jugadora: Papel.\n 👾Computadora: Tijera. \n Computadora ha ganado esta ronda. \n El puntaje es: Jugadora - " + winsPlayer + ". Computadora - " + winsCompu + ".");
+               
+            } else if (jugadora == 3 && computadora == 1) {
+                rondas++;
+                winsCompu++;
+                console.log ("Rondas jugadas: " + rondas+ " de " + partidas + ".\n 🙍‍♀️ Jugadora: Tijera.\n 👾Computadora: Piedra. \n Computadora ha ganado esta ronda. \n El puntaje es: Jugadora - " + winsPlayer + ". Computadora - " + winsCompu + ".");
+                
+            } else if (jugadora == 3 && computadora == 2) {
+                rondas++;
+                winsPlayer++;
+                console.log ("Rondas jugadas: " + rondas+ " de " + partidas + ".\n 🙍‍♀️ Jugadora: Tijera.\n 👾Computadora: Papel. \n Usted ganó esta ronda!🎉 \n El puntaje es: Jugadora - " + winsPlayer + ". Computadora - " + winsCompu + ".");
+               
+            } else if (jugadora == 3 && computadora == 3) {
+                rondas++;
+                console.log ("Rondas jugadas: " + rondas+ " de " + partidas + ".\n 🙍‍♀️ Jugadora: Tijera.\n 👾Computadora: Tijera. \n Se produjo un empate! \n El puntaje es: Jugadora - " + winsPlayer + ". Computadora - " + winsCompu + ".");
+                
+            }
+            i++;
+            
+            }   
+        
+            if (winsPlayer > winsCompu) {
+                document.write("Felicidades, usted ganó el juego!");
+            } else if (winsCompu > winsPlayer) {
+                document.write("La computadora ganó el juego. Inténtelo nuevamente!");
+            } else if (winsCompu = winsPlayer) {
+                document.write("Ambos ganaron la misma cantidad de partidas, esto es un empate!");
+            }
+            */
+
+            //----------------------------------------------------------------------------------------------------
+
+            /* 6- Crear un programa que pida ingresar usuario y contraseña. El programa debe permitir hasta 3 intentos, 
+            cuando el usuario y/o la contraseña sean incorrectos. Si se ingresa correctamente ambos antes de 3 intentos erróneos,
+             debe mostrar un mensaje de bienvenida. Si se ingresan 3 intentos erróneos, debe mostrar un mensaje de error y 
+             terminar el programa. El usuario y la contraseña ya deben estar guardadas en variables. 
+
+             const username = "androide123"
+             const password = "dinosaurio"
+
+             let user = prompt("Ingrese su nombre de usuario");
+             let pass = prompt("Ingrese la contraseña");
+             let correcto = false;
+
+             let intentos=1; 
+
+             while (intentos<3 && !correcto) {
+                if (user === "androide123" && pass === "dinosaurio") {
+                    correcto = true;
+                alert("Acceso concedido");
+                document.write("Bienvenido(a) a la página principal");
+                
+             } else { 
+                intentos++;
+                alert("Usuario y/o contraseña incorrectos. Inténtelo nuevamente");
+                user = prompt("Indique su nombre de usuario");
+                pass = prompt("Ingrese la contraseña nuevamente");
+                
+            } 
+            } if (!correcto) {
+                alert("Superó los tres intentos permitidos. El programa finalizará.");
+             }
+            */
+
+        //-----------------------------------------------------------------------------------
+
+        /* 7 - Crear un programa que permita escoger entre cara o cruz. 
+        El programa luego debe generar un resultado aleatorio y mostrar si se acertó o no. 
+        El programa debe mostrar en cada vuelta cuántas rondas seguidas acertadas van, y si 
+        en algún momento se erra, reiniciar el contador a 0. También debe llevar una cuenta de la cantidad 
+        máxima de rondas seguidas que se hizo sin errar. Cuando se ingresa la palabra SALIR, en vez de CARA o CRUZ, 
+        el programa debe mostrar la cantidad máxima de rondas seguidas acertadas junto a un mensaje de despedida, 
+        y terminar su ejecución. 
+
+        let eleccion = parseInt(prompt("Escriba '1' para elegir CARA o '2' para elegir CRUZ. En su defecto, elija '3' para SALIR"));
+        let op1 = 1;
+        let op2 = 2;
+        let moneda = op1 + Math.floor(Math.random()* op2);
+
+        let aciertos = 0;
+
+        while (eleccion != 3) {
+            if (eleccion == moneda) {
+            console.log("La moneda al azar fue: " +moneda);
+            console.log("Usted acertó");
+            aciertos++;
+            console.log("Sus aciertos consecutivos son: " +aciertos); 
+            break
+            } else {  
+            console.log("La moneda al azar fue: " +moneda);
+            console.log("Usted no acertó");
+            aciertos = 0;
+            console.log("Sus aciertos consecutivos vuelven a ser 0");
+            break
+           } 
+           eleccion = parseInt(prompt("Escriba '1' para elegir CARA o '2' para elegir CRUZ. En su defecto, elija '3' para SALIR"));
+        }
+    
+        if (eleccion === 3) {
+            console.log("Terminó el juego. Usted logró " + aciertos + " aciertos consecutivos.");
+            }
+
+    ---------------------------------------------------------------------------------------------------------------
+
+    /* if (eleccion === moneda) {
+            console.log("La moneda al azar fue: " +moneda);
+            console.log("Usted acertó");
+            aciertos++;
+            console.log("Sus aciertos consecutivos son: " +aciertos);
+            
+        } else { }
+            if (eleccion != moneda && eleccion != 3) { 
+            console.log("La moneda al azar fue: " +moneda);
+            console.log("Usted no acertó");
+            aciertos = 0;
+            console.log("Sus aciertos consecutivos vuelven a ser 0");
+           } 
+        }
+
+        if (eleccion === 3) {
+            console.log("Terminó el juego. Usted logró " + aciertos + " aciertos consecutivos.");
+            
+            }
+        
+        
+        /* switch (eleccion) {
+            case 1:
+                if (1===moneda){ 
+            console.log("La moneda al azar fue: " +moneda);
+            console.log("Usted acertó");
+            aciertos++;
+            console.log(aciertos);
+                } else {
+                console.log("La moneda al azar fue: " +moneda);
+                console.log("Usted no acertó");
+                aciertos = 0;
+                break
+                    }
+            
+
+            case 2:
+                if (2===moneda){
+            console.log("La moneda al azar fue: " +moneda);
+            console.log("Usted acertó");
+            aciertos++; 
+            console.log(aciertos);
+                } else {
+                console.log("La moneda al azar fue: " +moneda);
+                console.log("Usted no acertó");
+                aciertos = 0;
+                break
+                    } 
+            
+
+            case 3:
+            console.log("Terminó el juego. Usted logró " + aciertos + " consecutivos.")
+            break
+        }
+
+        eleccion = parseInt(prompt("Escriba '1' para elegir CARA o '2' para elegir CRUZ. En su defecto, elija '3' para SALIR"));
+    
+        */
+       
+        //_----------------------------------------------------------------------------------------------
+
+        /* 8 - Crear un programa que elija un número al azar entre 1 y 10. 
+        El programa debe luego pedir al usuario que intente adivinar el número. 
+        Por cada intento, debe avisar si el número a adivinar es mayor o menor que el número ingresado. 
+        El programa debe terminar cuando se adivina el número.
+
+        let menor = 1;
+        let mayor = 2;
+
+        let random = menor + Math.floor(Math.random()* mayor);
+        
+        let eleccion = parseInt(prompt("Ingrese un número al azar entre el 1 y el 10, inclusive."));
+        let i=1;
+
+        while (i<=10) {
+            if (eleccion > random) {
+                alert("El número que usted eligió es mayor que el número secreto. Inténtelo nuevamente.");
+                i++;
+                eleccion = parseInt(prompt("Ingrese un número al azar entre el 1 y el 10, inclusive."));
+            } else if  (eleccion < random) { 
+                alert("El número que usted ingresó es menor que el número secreto. Inténtelo nuevamente.");
+                eleccion = parseInt(prompt("Ingrese un número al azar entre el 1 y el 10, inclusive."));
+                i++;
+            } else if (eleccion === random) {
+            document.write("FELICIDADES! Adivinó el número correcto!");
+            break
+            }        
+        } 
+        */
+
+        //---------------------------------------------------------------------------------------------------
+
+        /* TERMINAAAAAAAAAAAAAAAAAAAAR 9 - Crear un programa que elija una palabra al azar de un conjunto de palabras posibles, y permita 
+        al usuario intentar adivinarla. Por cada intento sucesivo, el programa debe ir mostrando como pista 
+        la palabra de forma parcial, empezando con la primera letra y agregando una letra a la vez. 
+        El programa debe terminar cuando se adivina la palabra o se muestran todas las letras de la misma. Por ejemplo, si 
+        
+        const palabras = ["camisa", "puerta", "helado", "cabeza"];
+
+        function elementoAlAzar (datos){
+                return datos [Math.floor(Math.random()* datos.length)]
+        }       
+        
+        const palabraPorAdivinar = elementoAlAzar(palabras);
+
+        console.log(palabraPorAdivinar);
+
+        let usuario = prompt ("Intente adivinar la palabra de seis letras.")
+
+        let i=1;
+        let caracter = 0;
+
+        while (i<7) {
+            if (usuario != palabraPorAdivinar) { 
+                alert("No adivinó la palabra. Pero no se desanime, aquí va una pista. La palabra es: " + palabraPorAdivinar.charAt(caracter));
+                i++;
+                caracter++;
+                usuario = prompt ("Intente adivinar la palabra de seis letras.");
+                
+                alert("No adivinó la palabra. Pero no se desanime, aquí va una pista. La palabra es: " + palabraPorAdivinar.charAt(0) + palabraPorAdivinar.charAt(caracter));
+            } else if (usuario === palabraPorAdivinar) {
+                console.log ("Felicitaciones, adivinó correctamente la palabra secreta!");
+                break
+            }
+        }
+
+       */
+    //----------------------------------------------------------------------------------------
+
+    /* 10 - Crear un programa para llevar la cuenta del puntaje de un partido de tenis. 
+    Debe pedir inicialmente por los nombres de las jugadoras, y luego ir pidiendo el nombre de la ganadora de cada set, 
+    y mostrando el puntaje actualizado. Si alguna de las dos llega a los 3 puntos, el programa debe terminar y 
+    anunciar la ganadora. 
+
+    let jugadora1 = prompt("Ingrese el nombre de la primera jugadora");
+    let jugadora2 = prompt("Ingrese el nombre de la segunda jugadora");
+
+    let menor = 1;
+    let mayor = 2;
+    
+    let pointWinner = menor + Math.floor(Math.random()* mayor);
+
+    let puntosJugadora1 = 0;
+    let puntosJugadora2 = 0;
+
+    
+    while (puntosJugadora1 <= 3 && puntosJugadora2 <= 3) {
+        
+        if (pointWinner == menor) {
+            puntosJugadora1++;
+            console.log("El punto es para: " + jugadora1+ ". \n Score: " + jugadora1 + " tiene " + puntosJugadora1 + " punto(s). " + jugadora2 + " tiene " + puntosJugadora2 + " punto(s).");
+        } else { 
+            puntosJugadora2++;
+            console.log("El punto es para: " + jugadora2+ ". \n Score: " + jugadora1 + " tiene " + puntosJugadora1 + " punto(s). " + jugadora2 + " tiene " + puntosJugadora2 + " punto(s).");
+           }
+         
+        pointWinner = menor + Math.floor(Math.random()* mayor);
+
+        if (puntosJugadora1 === 3) {
+            document.write("Felicidades " + jugadora1 + "🎉. Usted ganó el partido por " + puntosJugadora1 +" a " + puntosJugadora2 + ".");
+            break;
+        } else if (puntosJugadora2 === 3) {
+            document.write("Felicidades " + jugadora2 + "🎉. Usted ganó el partido por " + puntosJugadora2 +" a " + puntosJugadora1 + ".");
+            break;
+          }
+    }
+    */
+    
+
+/*
+    
+   
+    
+
+//---------------------------------------------------------------------------------------------
+/* 12- Replicar el juego de Simón dice. El programa debe mostrar una secuencia de colores, 
+agregando por cada ronda que pase otro color más. El usuario debe ingresar los colores de la secuencia uno por uno.
+ Si erra la secuencia (es decir, si ingresa algún color mal), el programa debe terminar.
+  Los colores posibles son: rojo, azul, verde y amarillo. Hay dos variantes posibles: o el juego continúa indefinidamente
+   hasta que se erra la secuencia, y muestra cuántas rondas se sobrevivió, o el programa permite elegir al principio 
+   cuántas rondas se desea hacer, y mostrar un mensaje de victoria si se llega a esa cantidad de rondas sin errarle a
+    la secuencia. 
+
+let partidas = parseInt(prompt("Indique cuántas rondas consecutivas son la meta"));
+let colores = ["rojo", "azul", "verde", "amarillo"];
+
+function simonAleatorio (colores) {
+    return[...colores]
+    .sort(() => Math.random() >0.5 ? 1 : -1)
+}
+alert("Simón dice: "+simonAleatorio(colores));
+let order = simonAleatorio(colores);
+
+let ronda = prompt("Ingrese los colores en orden, uno por uno");
+let i= 1;
+
+function sigColorAleatorio (colores) {
+    return[...colores]
+    .sort(() => Math.random() >0.5 ? 1 : -1)
+    .slice(0)
+}
+
+while (i!=0) { 
+    if (ronda === order) {
+        alert ("Felicidades, superó la primera ronda");
+        i++;
+        order = simonAleatorio(colores) + sigColorAleatorio(colores);
+        ronda = prompt("Ingrese los colores en orden, uno por uno");
+}   else {
+    alert("El orden es incorrecto, perdió el juego :(");
+    i=0;
+}}
+*/
+
+
+//------------------------------------------------------------------------------------
+
+
+/* 13 - Crear un juego de combate contra un monstruo.
+
+●	El juego debe tener las siguientes acciones posibles:
+○	ATACAR MONSTRUO: genera un número aleatorio entre 1 y Ataque máximo jugadora y lo resta a Vida monstruo
+○	TOMAR POCION: genera un número aleatorio entre 1 y Curación máxima poción y lo suma a Vida jugadora y resta 1 a Cantidad de pociones
+○	BUSCAR POCION: genera un número entre 1 y 4, si sale 1 suma una poción, sino no encuentra nada
+○	SALIR: termina el programa
+●	En todo momento se debe mostrar un mensaje de lo que está pasando
+●	Luego de cada acción, el monstruo ataca a la jugadora y le resta a Vida jugadora un número aleatorio entre 1 y Ataque máximo monstruo
+●	Luego del ataque del monstruo, se debe mostrar la vida de ambos
+●	El programa termina cuando o la jugadora o el monstruo se quedan con vida igual o menor a 0
+●	Mostrar un mensaje con el resultado final. */
+
+let vidaJ = 100;
+let vidaM = 100;
+let pociones = 10;
+let ataMaxJ= 20;
+let ataMaxM = 25;
+let curaMax= 20;
+let minTodo= 1;
+
+let opcion = prompt("Elija el número de la opción que desee: \n 1- ATACAR \n 2- TOMAR POCIÓN \n 3- BUSCAR POCIÓN \n 4- SALIR");
+    opcion = opcion;
+
+switch (opcion) {
+
+    case '1': 
+        let ataque = minTodo + Math.floor(Math.random()* ataMaxJ);
+        vidaM = vidaM - ataque; 
+        
+    
+        console.log("Ataque exitoso! Le disminuiste " + ataque + " puntos a la vida del monstruo.");
+        
+        let ataqueM = minTodo + Math.floor(Math.random()* ataMaxM);
+        console.log("No obstante el monstruo ataca y te reduce " + ataqueM + " puntos vitales.");
+
+        vidaJ = vidaJ - ataqueM;
+
+        console.log("Luego de esta ronda tienes esta cantidad de vida: " + vidaJ + " y el monstruo: " + vidaM + "."); 
+        
+        opcion = prompt("Elija el número de la opción que desee: \n 1- ATACAR \n 2- TOMAR POCIÓN \n 3- BUSCAR POCIÓN \n 4- SALIR");
+        
+
+    case '2':
+        let cura = minTodo + Math.floor(Math.random()* curaMax);
+        vidaJ = cura + vidaJ;
+        pociones--;
+        console.log("Sumaste " + cura + " puntos de tu vida con éxito. Ahora posees " + vidaJ + " de vida, pero perdiste una poción y te quedan " + pociones);
+        
+        
+        let ataqueMo = minTodo + Math.floor(Math.random()* ataMaxM);
+        console.log("No obstante, el monstruo ataca y te quita " + ataqueMo + " puntos.");
+        vidaJ = vidaJ - ataqueMo;
+
+        console.log("Luego de esta ronda tienes esta cantidad de vida: " + vidaJ + " y el monstruo: " + vidaM + ".");
+        break;
+
+    case '3': 
+        let busqueda = minTodo + Math.floor(Math.random()* 4);
+        if (busqueda === 1) {
+            pociones++;
+            console.log("Excelente búsqueda. Conseguiste una poción más. Ahora tienes " + pociones + " pociones.");
+
+           
+            let ataqueMon = minTodo + Math.floor(Math.random()* ataMaxM);
+            console.log("A pesar de esto el monstruo ataca y te reduce " + ataqueMon + " puntos vitales.");
+
+            vidaJ = vidaJ - ataqueMon;
+
+            console.log("Luego de esta ronda tienes esta cantidad de vida: " + vidaJ + " y el monstruo: " + vidaM + ".");   
+
+        } else {
+            console.log("No se encontró ninguna poción.");
+            
+            let ataqueMons = minTodo + Math.floor(Math.random()* ataMaxM);
+            console.log("Pero el monstruo consigue atacar y te quita " + ataqueMons + " puntos.");
+            
+            vidaJ = vidaJ - ataqueMons;
+
+            console.log("Luego de esta ronda tienes esta cantidad de vida: " + vidaJ + " y el monstruo: " + vidaM + ".");
+
+        }
+        opcion = prompt("Elija el número de la opción que desee: \n 1- ATACAR \n 2- TOMAR POCIÓN \n 3- BUSCAR POCIÓN \n 4- SALIR");
+    case '4':
+        document.write("La partida ha finalizado.");
+        
+}
+
+if (vidaJ === 0) {
+    document.write("Tu vida se agotó, fuiste derrotad@ por el monstruo");
+} else if (vidaM === 0){
+    document.write("Felicitaciones, le quitaste toda la vida al monstruo!");
+}
+
+
+
+        </script>
+    </body>
+</html>
