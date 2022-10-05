@@ -98,7 +98,7 @@
            /* 5- Al ejercicio de Piedra, papel, tijera de condicionales, 
             agregarle la posibilidad de jugar la cantidad de rondas que se deseen. 
             Por cada ronda, se debe mostrar ambas jugadas (usuario y computadora), quién gano la ronda, 
-            puntaje parcial hasta el momento y rondas restantes. Al finalizar se debe indicar quién ganó.
+            puntaje parcial hasta el momento y rondas restantes. Al finalizar se debe indicar quién ganó. 
                         
             let inicio = 1;
             let final = 3;
@@ -207,7 +207,7 @@
 
         //-----------------------------------------------------------------------------------
 
-        /* 7 - Crear un programa que permita escoger entre cara o cruz. 
+        /*7 - Crear un programa que permita escoger entre cara o cruz. 
         El programa luego debe generar un resultado aleatorio y mostrar si se acertó o no. 
         El programa debe mostrar en cada vuelta cuántas rondas seguidas acertadas van, y si 
         en algún momento se erra, reiniciar el contador a 0. También debe llevar una cuenta de la cantidad 
@@ -218,32 +218,52 @@
         let eleccion = parseInt(prompt("Escriba '1' para elegir CARA o '2' para elegir CRUZ. En su defecto, elija '3' para SALIR"));
         let op1 = 1;
         let op2 = 2;
-        let moneda = op1 + Math.floor(Math.random()* op2);
+        
 
         let aciertos = 0;
-
-        while (eleccion != 3) {
-            if (eleccion == moneda) {
-            console.log("La moneda al azar fue: " +moneda);
-            console.log("Usted acertó");
-            aciertos++;
-            console.log("Sus aciertos consecutivos son: " +aciertos); 
-            break
-            } else {  
-            console.log("La moneda al azar fue: " +moneda);
-            console.log("Usted no acertó");
-            aciertos = 0;
-            console.log("Sus aciertos consecutivos vuelven a ser 0");
-            break
-           } 
-           eleccion = parseInt(prompt("Escriba '1' para elegir CARA o '2' para elegir CRUZ. En su defecto, elija '3' para SALIR"));
-        }
+        
+            while (eleccion === 1 || eleccion === 2) {
+                for (let i=1; i<10; i++) {
+                    let moneda = op1 + Math.floor(Math.random()* op2);
+                
+                     if (moneda === 1 && eleccion === 1) {
+                        console.log("La moneda al azar fue CARA");
+                        console.log("Usted acertó");
+                        aciertos++;
+                        console.log("Sus aciertos consecutivos son: " +aciertos);
+                        
+                        
+                    } else if (moneda === 2 && eleccion === 1) {  
+                        console.log("La moneda al azar fue CRUZ");
+                        console.log("Usted no acertó");
+                        aciertos = 0;
+                        console.log("Sus aciertos consecutivos vuelven a ser 0");
+                        
+                        
+                    } else if (moneda === 1 && eleccion === 2) {
+                        console.log("La moneda al azar fue CARA");
+                        console.log("Usted no acertó");
+                        aciertos = 0;
+                        console.log("Sus aciertos consecutivos vuelven a ser 0");
+                        
+                        
+                    } else if (moneda === 2 && eleccion === 2) {  
+                        console.log("La moneda al azar fue CRUZ");
+                        console.log("Usted acertó");
+                        aciertos++;
+                        console.log("Sus aciertos consecutivos son: " +aciertos); 
+                          
+                    } else if (eleccion === 3) {
+                         console.log("Terminó el juego. Usted logró " + aciertos + " aciertos consecutivos.");
+                    } 
+            
+                    eleccion = parseInt(prompt("Escriba '1' para elegir CARA o '2' para elegir CRUZ. En su defecto, elija '3' para SALIR"));
+                }
+                }
+                */    
     
-        if (eleccion === 3) {
-            console.log("Terminó el juego. Usted logró " + aciertos + " aciertos consecutivos.");
-            }
 
-    ---------------------------------------------------------------------------------------------------------------
+    //---------------------------------------------------------------------------------------------------------------
 
     /* if (eleccion === moneda) {
             console.log("La moneda al azar fue: " +moneda);
@@ -302,7 +322,7 @@
 
         eleccion = parseInt(prompt("Escriba '1' para elegir CARA o '2' para elegir CRUZ. En su defecto, elija '3' para SALIR"));
     
-        */
+        
        
         //_----------------------------------------------------------------------------------------------
 
@@ -414,7 +434,7 @@
     */
     
 
-/*
+
     
    
     
@@ -474,7 +494,7 @@ while (i!=0) {
 ●	Luego de cada acción, el monstruo ataca a la jugadora y le resta a Vida jugadora un número aleatorio entre 1 y Ataque máximo monstruo
 ●	Luego del ataque del monstruo, se debe mostrar la vida de ambos
 ●	El programa termina cuando o la jugadora o el monstruo se quedan con vida igual o menor a 0
-●	Mostrar un mensaje con el resultado final. */
+●	Mostrar un mensaje con el resultado final. 
 
 let vidaJ = 100;
 let vidaM = 100;
@@ -487,7 +507,9 @@ let minTodo= 1;
 let opcion = prompt("Elija el número de la opción que desee: \n 1- ATACAR \n 2- TOMAR POCIÓN \n 3- BUSCAR POCIÓN \n 4- SALIR");
     opcion = opcion;
 
-switch (opcion) {
+while (vidaJ > 0 && vidaM > 0) {
+
+    switch (opcion) {
 
     case '1': 
         let ataque = minTodo + Math.floor(Math.random()* ataMaxJ);
@@ -501,10 +523,15 @@ switch (opcion) {
 
         vidaJ = vidaJ - ataqueM;
 
-        console.log("Luego de esta ronda tienes esta cantidad de vida: " + vidaJ + " y el monstruo: " + vidaM + "."); 
+        console.log("Luego de esta ronda tienes esta cantidad de vida: " + vidaJ + " y el monstruo: " + vidaM + ".");
         
-        opcion = prompt("Elija el número de la opción que desee: \n 1- ATACAR \n 2- TOMAR POCIÓN \n 3- BUSCAR POCIÓN \n 4- SALIR");
-        
+        if (vidaJ <= 0) {
+             console.log("Tu vida se agotó, fuiste derrotad@ por el monstruo");
+            } else if (vidaM <= 0){
+                console.log("Felicitaciones, le quitaste toda la vida al monstruo!");
+            }    
+    
+        break     
 
     case '2':
         let cura = minTodo + Math.floor(Math.random()* curaMax);
@@ -518,7 +545,13 @@ switch (opcion) {
         vidaJ = vidaJ - ataqueMo;
 
         console.log("Luego de esta ronda tienes esta cantidad de vida: " + vidaJ + " y el monstruo: " + vidaM + ".");
-        break;
+
+        if (vidaJ <= 0) {
+             console.log("Tu vida se agotó, fuiste derrotad@ por el monstruo");
+            } else if (vidaM <= 0){
+                console.log("Felicitaciones, le quitaste toda la vida al monstruo!");
+            }    
+        break
 
     case '3': 
         let busqueda = minTodo + Math.floor(Math.random()* 4);
@@ -532,7 +565,13 @@ switch (opcion) {
 
             vidaJ = vidaJ - ataqueMon;
 
-            console.log("Luego de esta ronda tienes esta cantidad de vida: " + vidaJ + " y el monstruo: " + vidaM + ".");   
+            console.log("Luego de esta ronda tienes esta cantidad de vida: " + vidaJ + " y el monstruo: " + vidaM + ".");
+            
+            if (vidaJ <= 0) {
+             console.log("Tu vida se agotó, fuiste derrotad@ por el monstruo");
+            } else if (vidaM <= 0){
+                console.log("Felicitaciones, le quitaste toda la vida al monstruo!");
+            }    
 
         } else {
             console.log("No se encontró ninguna poción.");
@@ -544,20 +583,23 @@ switch (opcion) {
 
             console.log("Luego de esta ronda tienes esta cantidad de vida: " + vidaJ + " y el monstruo: " + vidaM + ".");
 
-        }
-        opcion = prompt("Elija el número de la opción que desee: \n 1- ATACAR \n 2- TOMAR POCIÓN \n 3- BUSCAR POCIÓN \n 4- SALIR");
-    case '4':
-        document.write("La partida ha finalizado.");
+            if (vidaJ <= 0) {
+             console.log("Tu vida se agotó, fuiste derrotad@ por el monstruo");
+            } else if (vidaM <= 0){
+                console.log("Felicitaciones, le quitaste toda la vida al monstruo!");
+            }    
+            }
+        break
         
+    default:
+        console.log ("La partida ha finalizado."); 
+        document.write ("La partida ha finalizado.");   
+        
+    }
+    opcion = prompt("Elija el número de la opción que desee: \n 1- ATACAR \n 2- TOMAR POCIÓN \n 3- BUSCAR POCIÓN \n 4- SALIR");
 }
-
-if (vidaJ === 0) {
-    document.write("Tu vida se agotó, fuiste derrotad@ por el monstruo");
-} else if (vidaM === 0){
-    document.write("Felicitaciones, le quitaste toda la vida al monstruo!");
-}
-
-
+    
+*/
 
         </script>
     </body>
