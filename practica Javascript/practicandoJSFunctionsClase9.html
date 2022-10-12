@@ -94,6 +94,37 @@
             }
             document.write("El factorial de " + num + " es igual a: " +facto);
             */
+
+            //-----------------------------------------------------------------
+
+            /* TERMINAAAAAAAAAAR 5 - Crear un programa para controlar las vueltas de una deportista. 
+            Debe pedir al usuario la cantidad de vueltas que va a realizar e ir preguntando el tiempo 
+            en segundos de cada vuelta. Al final, se debe mostrar un mensaje listando los tiempos de 
+            cada vuelta y el promedio del tiempo de las vueltas (suma de las vueltas / cantidad de vueltas).
+             Ejemplo:
+    Cantidad de vueltas: 3
+    Vuelta 1: 133s
+    Vuelta 2: 145s
+    Vuelta 3: 166s
+    ⏱ Promedio: 144.45s
+  
+            let vueltas = Number(prompt("Ingrese la cantidad de vueltas que correrá"));
+
+            let i= 1;
+
+            while (i <= vueltas) {
+                console.log(vueltas);
+                break
+                let registro = prompt("Indique cuántos segundos le tomó dar la vuelta");
+                console.log("Vuelta "+ i + ": " + registro + " segundos.");
+                i++;
+            }
+            function promedio (vueltas, registro) {
+                let resultado = registro/vueltas;
+            }
+            */
+
+//------------------------------------------------------------
              
            /* 5- Al ejercicio de Piedra, papel, tijera de condicionales, 
             agregarle la posibilidad de jugar la cantidad de rondas que se deseen. 
@@ -172,6 +203,21 @@
             */
 
             //----------------------------------------------------------------------------------------------------
+
+            /* 6- Crear un programa que permita ingresar una serie de números separados por espacio. 
+            El programa debe disminuyendo cada número en 1 por ronda e ir mostrando el resultado
+             (en consola, o en un string concatenado) hasta que todos lleguen a 0 (cuando lleguen a no deben seguir disminuyendo)
+              y se produzca la explosión. */
+
+            let serie = prompt ("Ingrese una serie de cuatro números");
+            serie.split(' ')
+
+            while (serie !== "0000") {
+                console.log(serie);
+
+            }
+
+            //--------------------------------------------------------------------------------------------
 
             /* 6- Crear un programa que pida ingresar usuario y contraseña. El programa debe permitir hasta 3 intentos, 
             cuando el usuario y/o la contraseña sean incorrectos. Si se ingresa correctamente ambos antes de 3 intentos erróneos,
@@ -482,8 +528,188 @@ while (i!=0) {
 
 //------------------------------------------------------------------------------------
 
+/*  13 - Crear un programa que tenga un dinero inicial.
+●	El programa también deberá contar con un menú con las siguientes opciones:
+○	EXTRAER: debe pedir al usuario cuánto desea extraer y si el dinero a extraer es menor o igual al saldo actual, restar el dinero extraído al saldo
+○	DEPOSITAR: debe pedir al usuario la cantidad a ingresar y sumarla al saldo actual
+○	CONSULTAR SALDO: debe mostrar el saldo actual
+○	VER ÚLTIMOS MOVIMIENTOS: debe mostrar una lista de los últimos moviemientos realizados
+○	SALIR: debe terminar la ejecución del programa
+●	El programa debe mostrar el menú de opciones, y permitir ingresar una opción. Si la opción ingresada es incorrecta, debe mostrar nuevamente el menú. Si se elige SALIR, debe terminar el programa. Si se elige alguna de las otras opciones, debe realizar las acciones correspondientes, y una vez terminada, volver al menú de opciones. Las acciones de EXTRAER y DEPOSITAR y CONSULTAR SALDO deben registrarse cada vez que se realicen para poder consultarse luego, por ejemplo:
+ULTIMOS MOVIMIENTOS
+ - Depositado: $550
+ - Extraido: $1000
+ - Consultado saldo: $3400
+ - Depositado: $100
 
-/* 13 - Crear un juego de combate contra un monstruo.
+
+let saldo = 500;
+
+let menu = prompt("Introduzca el número de la opción que desea ejecutar: \n 1- EXTRAER. \n 2- DEPOSITAR. \n 3- CONSULTAR SALDO. \n 4- VER ÚLTIMOS MOVIMIENTOS. \n 5- SALIR.");
+let saldoNuevo = 0;
+let saldoActualizado=0;
+let i=1;
+
+while (i != 0) {
+    switch (menu) {
+   
+    case '1':  
+        let extraccion = Number(prompt("Ingrese la suma de dinero que desea extraer de su cuenta:"));
+
+        if (extraccion <= saldo) {
+            let saldoNuevo = saldo - extraccion;
+            saldoActualizado++;
+            i=0;
+            console.log(saldoNuevo);
+                if (saldoNuevo != 0) {
+                    let saldo = saldoNuevo;
+                    }
+            menu = prompt("Introduzca el número de la opción que desea ejecutar: \n 1- EXTRAER. \n 2- DEPOSITAR. \n 3- CONSULTAR SALDO. \n 4- VER ÚLTIMOS MOVIMIENTOS. \n 5- SALIR.");
+            
+        } if (extraccion > saldo){
+            alert("No posee dinero suficiente en su cuenta. Intente una cifra menor a " + saldo + ".");
+            i++;
+            break
+        } 
+        
+    
+        
+        
+
+        
+        if (saldoActualizado === 0 && extraccion <= saldo) {
+            let saldoNuevo = saldo - extraccion;
+            saldoActualizado++;
+
+            console.log(saldoNuevo);
+            break
+        } else if (saldoActualizado != 0){
+            let saldonuevo = saldo;
+        
+            console.log(saldoNuevo);
+            break
+        } else if (saldoActualizado === 0 && extraccion > saldo) {
+
+            let saldo = saldoNuevo;
+            alert("No posee dinero suficiente en su cuenta. Intente una cifra menor a " + saldoNuevo + ".");
+        }
+            menu = prompt("Introduzca el número de la opción que desea ejecutar: \n 1- EXTRAER. \n 2- DEPOSITAR. \n 3- CONSULTAR SALDO. \n 4- VER ÚLTIMOS MOVIMIENTOS. \n 5- SALIR.");
+                
+       
+     
+    case '2': 
+        let deposito = Number(prompt("Ingrese la cantidad a depositar: "));
+        let saldoNuevo = saldo + deposito;
+        //console.log("Su nuevo saldo es: $" + saldoNuevo);
+        saldoActualizado++;
+
+        let continua = prompt ("¿Desea realizar otra operación? Ingrese '1' en caso afirmativo o '2' en caso negativo");
+
+            if (continua === "1"){
+                i++;
+                menu = prompt("Introduzca el número de la opción que desea ejecutar: \n 1- EXTRAER. \n 2- DEPOSITAR. \n 3- CONSULTAR SALDO. \n 4- VER ÚLTIMOS MOVIMIENTOS. \n 5- SALIR.");    
+            } else { 
+                alert("Gracias por visitar nuestro banco. Hasta la próxima!");
+                console.log(saldoNuevo);
+                i=0;
+                break
+                }
+        break    
+    
+    case '3': 
+        
+        if (saldoActualizado != 0) {
+        let consultado = alert("Su saldo actual es de: " + saldoNuevo + " pesos");
+
+        break;
+        
+        } else if (saldoActualizado == 0) {
+            let consultado = alert("Su saldo actual es de: " + saldo + " pesos.");
+
+            break;
+            
+        }
+        
+
+    case '4': 
+        alert("Sus últimos movimientos son: \n Extraído: $" + extraccion + "\n Depositado: $" + deposito + "\n Saldo Consultado: $" + consultado);
+        break;
+        }
+    }
+*/
+
+//---------------------------------------------------------------------------------------------------------
+
+/* 14 - Crear un programa que tenga un menú con las siguientes opciones:
+○	AGREGAR TAREA: debe pedir al usuario ingresar una tarea y agregarla a la lista de tareas
+○	MODIFICAR TAREA: debe pedir al usuario ingresar el número de tarea que se desea modificar, mostrarla, y pedir que ingrese la tarea a reemplazarla o modificarla
+○	ELIMINAR TAREA: debe pedir al usuario ingresar el número de tarea a eliminar, mostrarla, y pedirle confirmar si desea eliminarla o no
+○	VER TAREAS: debe listar todas las tareas hasta el momento
+○	SALIR: debe terminar la ejecución del programa
+●	El programa debe mostrar el menú de opciones, y permitir ingresar una opción. 
+Si la opción ingresada es incorrecta, debe mostrar nuevamente el menú. 
+
+
+let lista = ['lavar', 'planchar', 'bordar'];
+
+let opciones = prompt("Ingrese el número de la opción que desea: \n 1- AGREGAR TAREA. \n 2- MODIFICAR TAREA. \n 3- ELIMINAR TAREA. \n 4- VER TAREAS. \n 5- SALIR.");
+console.log(lista);
+
+let ultimoElemento = lista.length - 1;
+
+    switch (opciones) {
+
+        case '1':
+            let tareaAgregada = prompt("Indique el nombre de la tarea que desea agregar a la lista");  
+            let agregado = lista.push(tareaAgregada);
+            console.log(lista);
+            break;
+
+        case '2':
+            let modificar = Number(prompt("Indique el número de tarea que desea modificar comenzando desde el 0"));
+            console.log("Usted modificará este elemento de la lista: " + lista[modificar]);
+
+                if (modificar > lista.length) { 
+                    alert("No existe ese elemento en la lista, el último elemento es el número: " + ultimoElemento);   
+                } else {
+                    let newElement = prompt("Ingrese el nombre del nuevo elemento");
+                    lista.splice(modificar, 1, newElement);
+                    console.log("La lista quedó conformada de la siguiente manera: " + lista);
+                }
+            break; 
+        
+        case '3': 
+            let eliminar = prompt("Indique la posición del elemento que desea eliminar, comenzando desde el 0");
+            console.log("Usted eliminará el siguiente elemento de la lista: " + lista[eliminar]);
+            let respuesta = prompt("Está seguro de que desea eliminar " + lista [eliminar] + " de la lista? Responda 'si' o 'no'.");
+                
+                if (respuesta = "si") {
+                    lista.splice(eliminar, 1);
+                    console.log(lista);
+                } else { 
+                    console.log("No borró ningún elemento. La lista se mantiene tal y como estaba!");
+                }
+                break;
+        case '4':
+            console.log("La lista es: " + lista);
+            break;
+
+        case '5':
+            document.write("El programa ha finalizado.");
+            break;
+
+        default:
+        opciones = prompt("Ingrese el número de la opción que desea: \n 1- AGREGAR TAREA. \n 2- MODIFICAR TAREA. \n 3- ELIMINAR TAREA. \n 4- VER TAREAS. \n 5- SALIR.");
+
+    }
+*/
+
+
+//-----------------------------------------------------------------------------------------------------
+
+
+
+/* 15 - Crear un juego de combate contra un monstruo.
 
 ●	El juego debe tener las siguientes acciones posibles:
 ○	ATACAR MONSTRUO: genera un número aleatorio entre 1 y Ataque máximo jugadora y lo resta a Vida monstruo
