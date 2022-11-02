@@ -44,4 +44,12 @@ body {
     background-repeat: no-repeat;
     padding: 1em;
 }
-  
+
+.video {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.video:hover{
+    background: #4153f5;
+    box-shadow: 0 0 3px #4153f5, 0 0 10px #4153f5, 0 0 10px #4153f5;
+}
