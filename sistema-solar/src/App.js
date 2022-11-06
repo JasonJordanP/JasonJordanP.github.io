@@ -1,6 +1,9 @@
 
 import './App.css';
-import { Planetas } from './components/Planetas.js';
+import { Planetas } from './components/Planetas';
+import { LinksExample } from './components/Links';
+import { Formulario } from './components/Form';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
@@ -51,7 +54,18 @@ function App() {
         />
       <div className = 'video'>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/8dy27u_kX1I?start=358" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
       </div>
+
+      <div className = 'zonaForm'>
+        <h2> Mantengámonos en contacto </h2>
+        <Formulario/>
+      </div>
+
+      <div className = 'links'>
+      <LinksExample />
+      </div>
+
       </div>
     </div>
   );

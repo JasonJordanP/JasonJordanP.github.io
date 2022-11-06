@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
 
+
 * {
     padding: 0;
     margin: 0;
@@ -10,6 +11,16 @@
 h1 {
     max-width: 940px;
     font-size: 2.5em;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 40px 120px;
+    text-align: center;
+}
+h2 {
+    color: #deddea;
+    font-weight: bold;
+    max-width: 940px;
     font-family: 'Libre Baskerville', serif;
     font-weight: 700;
     line-height: 1.1;
@@ -33,6 +44,22 @@ h1 {
     justify-content: center;
     text-align: center;
 }
+.zonaForm {
+    border-style:ridge;
+    border-radius: 10px;
+    border-color: blue;
+    padding: 3em;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-image: url(./imagenes/galaxia2.jpg);
+    background-position: center;
+    background-size:cover;
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+}
+.links {
+    padding: 15px;
+}
 
 html,
 body {
@@ -48,6 +75,7 @@ body {
 .video {
     margin-top: 3em;
     margin-bottom: 3em;
+    -ms-flex-align: center;
 }
 .video:hover{
     background: #4153f5;
