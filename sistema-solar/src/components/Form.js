@@ -18,11 +18,11 @@ export function Formulario() {
         <Form.Label>Email</Form.Label>
         <Form.Control type="email" placeholder="Ingrese su mail" />
         <Form.Text className="text-muted">
-          No compartiremos su mail con nadie más.
+          No compartiremos su Email con nadie más.
         </Form.Text>
       </Form.Group>
 
-      <Button variant="primary" type="submit">
+      <Button type="submit">
         Enviar
       </Button>
     </Form>
