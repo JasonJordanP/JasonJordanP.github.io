@@ -9,7 +9,7 @@ import { NavbarDarkExample } from './components/Navbar';
 
 function App() {
   return (
-   <div className = 'App'>
+   <div className = 'App' id= 'pagina'>
         <div className= 'planetas'>
 
         <div className = 'navbar'>

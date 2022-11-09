@@ -9,7 +9,7 @@ export function NavbarDarkExample() {
   return (
     <Navbar bg="dark" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">Enciclopedia Galáctica</Navbar.Brand>
+        <Navbar.Brand href="#pagina">Enciclopedia Galáctica</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav

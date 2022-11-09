@@ -48,6 +48,7 @@ h2 {
     border-radius: 10px;
     border-color: #9c64a8;
     padding: 3em;
+    display: inline-block;
     flex-wrap: wrap;
     justify-content: flex-start;
     background-image: url(./imagenes/galaxia2.jpg);
@@ -95,7 +96,10 @@ a.nav-link:active{
     color:#4153f5;
 }
 input.form-control{
-    margin-left: 6em;
+    align-content: center;
+}
+.d-flex {
+    margin-left: 10em;
 }
 button.btn.btn-outline-success {
     margin-left: 1em;
@@ -108,4 +112,8 @@ button.btn.btn-outline-success {
 .video:hover{
     background: #4153f5;
     box-shadow: 0 0 3px #4153f5, 0 0 10px #4153f5, 0 0 10px #4153f5;
+}
+.links {
+    margin-top: 1em;
+    font-size: large;
 }
