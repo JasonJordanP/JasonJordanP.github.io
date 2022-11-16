@@ -2,6 +2,7 @@
 
 .form-label {
     padding-top: 1em;
+    margin-bottom: 1em;
     color:black;
     font-size: large;
     font-family: 'Libre Baskerville', serif;
@@ -11,5 +12,7 @@
 .btn-primary {
     margin-top: 20px;
     width: 10em;
-    
+}
+#contacto {
+    margin-bottom: 4em;
 }

@@ -7,17 +7,17 @@ import Navbar from 'react-bootstrap/Navbar';
 
 export function NavbarDarkExample() {
   return (
-    <Navbar bg="dark" expand="lg">
+    <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#pagina">Enciclopedia Galáctica</Navbar.Brand>
+        <Navbar.Brand href="/">Enciclopedia Galáctica</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
             navbarScroll
           >
-            <Nav.Link href="#planetas">Planetas del Sistema Solar</Nav.Link>
-            <Nav.Link href="#video">Video</Nav.Link>
-            <Nav.Link href="#contacto">Contáctenos</Nav.Link>
+            <Nav.Link href="/PlanetasSistemaSolar">Planetas del Sistema Solar</Nav.Link>
+            <Nav.Link href="/Video">Video</Nav.Link>
+            <Nav.Link href="/Contactenos">Contáctenos</Nav.Link>
     
           </Nav>
           <Form className="d-flex">
