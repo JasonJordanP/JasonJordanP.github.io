@@ -1,19 +1,28 @@
 import React from 'react';
 import '../stylesheets/descripciones.css';
+import data from "../data.json"
 
- export function Planetas(props) {
+
+ export const Planetas = ( ) =>   {
+
   return (
+
+
+    data.map (e =>
     <div className= 'contenedor-planeta'>
       <img className= 'imagen-planeta'
-      src = {require (`../imagenes/${props.imagen}.jpg`)  } alt = 'planeta' />
+      src = {require (`../imagenes/${e.imagen}.jpg`)  } alt = 'planeta' />
     
       <div className= 'contenedor-texto-planeta'>
         <p className= 'nombre-planeta'>
-        <strong> { props.nombre } </strong> </p>
-        <p className= 'descripcion-planeta'> { props.descripcion } </p>
+        <strong> { e.nombre } </strong> </p>
+        <p className= 'descripcion-planeta'> { e.descripcion } </p>
         </div>
     </div>
-  );
+    )
+    
+  )
+  
 }
 
 
