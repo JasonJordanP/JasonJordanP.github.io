@@ -1,10 +1,60 @@
 
 import React from 'react';
-import { MDBFooter, MDBContainer, MDBIcon, MDBBtn } from 'mdb-react-ui-kit';
+import { MDBFooter, MDBContainer, MDBIcon, MDBBtn, MDBCol, MDBRow } from 'mdb-react-ui-kit';
 
 export function Footer() {
   return (
     <MDBFooter className='bg-dark text-center text-white'>
+      
+      <MDBContainer className='p-4'>
+        <MDBRow>
+          <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
+
+            <ul className='list-unstyled mb-0'>
+              <li>
+                <a href='/' className='text-light'>
+                   Home
+                </a>
+              </li>
+            </ul>
+          </MDBCol>
+
+          <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
+
+            <ul className='list-unstyled mb-0'>
+              <li>
+                <a href='/PlanetasSistemaSolar' className='text-light'>
+                   Planetas del Sistema Solar
+                </a>
+              </li>
+            </ul>
+          </MDBCol>
+
+          <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
+
+            <ul className='list-unstyled mb-0'>
+              <li>
+                <a href='/Video' className='text-light'>
+                   Video
+                </a>
+              </li>
+            </ul>
+          </MDBCol>
+
+          <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
+
+            <ul className='list-unstyled mb-0'>
+              <li>
+                <a href='/Contactenos' className='text-light'>
+                   Contáctenos
+                </a>
+              </li>
+            </ul>
+          </MDBCol>
+        </MDBRow>
+      </MDBContainer>
+
+    
       <MDBContainer className='p-4 pb-0' id='footer'>
         <section className='mb-4'>
           <MDBBtn
