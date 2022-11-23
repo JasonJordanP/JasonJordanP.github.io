@@ -21,3 +21,10 @@ strong {
     color: black;
 }
 
+#obligatorios {
+    color: red;
+    font-weight: bold;
+    margin-top: 15px;
+    font-family: 'Libre Baskerville', serif;
+}
+

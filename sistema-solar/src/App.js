@@ -3,7 +3,7 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import { Home } from './pages/Home.js';
 import { InfoPlanetas } from './components/InfoPlanetas.js';
-import { Form2 } from './components/Form2';
+import { Form6 } from './components/Form6';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavbarDarkExample } from './components/Navbar';
 import { VideoSistema } from './components/Video.js';
@@ -24,7 +24,7 @@ function App() {
             <Route path= '/' element = {<Home />} />
             <Route path= '/PlanetasSistemaSolar' element = {<InfoPlanetas />} />
             <Route path= '/Video' element = {<VideoSistema />} />
-            <Route path= '/Contactenos' element = {<Form2 />} />
+            <Route path= '/Contactenos' element = {<Form6  />} />
         </Routes>
 
         <Footer />    

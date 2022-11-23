@@ -5,49 +5,6 @@ import React, { useState } from 'react';
 import Swal from 'sweetalert2';
 
 
-/* function Formulario() {
-  const [nombre, setNombre] = useState("");
-  const [apellido, setApellido] = useState("");
-  const [email, setEmail] = useState("");
-  const [comentario, setComentario] = useState("");
-
-  const [error, setError] = useState(false);
-
-   useEffect(() => {
-     if (Object.keys(Form2).length > 0) {
-
-      setNombre(Form2.nombre)
-      setApellido(Form2.apellido)
-      setEmail(Form2.email)
-      setComentario(Form2.comentario)
-      
-     }
-    
-   }, [paciente])
-
-   const handleSubmit = (e) => {
-    e.preventDefault();
-
-    // Validacion del formulario
-
-    if ([nombre, apellido, email, comentario].includes("")) {
-      console.log("Complete todos los campos vacíos");
-
-      setError(true);
-      return;
-    }
-    setError(false);
-
-   const comentarioEnviado ={
-    nombre,
-    apellido,
-    email,
-    comentario,
-   
-   }
-  }
-};
-*/
 
 export function Form2() {
 
@@ -56,6 +13,7 @@ export function Form2() {
   const publicar = () => {
 
     setStateSub(true);
+    console.log(stateSub);
 
     Swal.fire({
       title: '<strong>Mensaje enviado con éxito</strong>',
@@ -73,8 +31,6 @@ export function Form2() {
       cancelButtonAriaLabel: 'Thumbs down'
     }) 
     
-      
-
   }
 
   return (
@@ -82,17 +38,17 @@ export function Form2() {
     <div className = 'zonaForm' id='contacto'>
     <h2> Mantengámonos en contacto </h2>
     <Form>
-        <Form.Group className = "mb-3" controlId = "formName">
-        <Form.Label controlId = "nombre" required>Nombre</Form.Label>
+        <Form.Group className = "mb-3" controlid = "formName">
+        <Form.Label controlid = "nombre" required>Nombre</Form.Label>
         <Form.Control type="text" placeholder="Ingrese su nombre" />
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formLastname">
+        <Form.Group className="mb-3" controlid="formLastname">
         <Form.Label controlId = "apellido">Apellido</Form.Label>
         <Form.Control type="text" placeholder="Ingrese su(s) apellido(s)" />
         </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formEmail">
+      <Form.Group className="mb-3" controlid="formEmail">
         <Form.Label>Email</Form.Label>
         <Form.Control type="email" placeholder="Ingrese su mail" />
         <Form.Text className="text-muted">
@@ -100,7 +56,7 @@ export function Form2() {
         </Form.Text>
       </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formComentario">
+      <Form.Group className="mb-3" controlid="formComentario">
         <Form.Label id = "comentario">Comentario</Form.Label>
         <Form.Control type="textarea" placeholder="Déjenos su mensaje" id= "comentario" />
         </Form.Group>
