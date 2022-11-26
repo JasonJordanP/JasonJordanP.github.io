@@ -28,7 +28,10 @@ export const Form5 = () => {
     const handleForm = (event) => {
 
           event.preventDefault();
-        console.log(values);
+          const [nombre, setNombre] = useState ("");
+          const [apellido, setApellido] = useState ("");
+          const [email, setEmail] = useState ("");
+          const [comentario, setComentario] = useState ("");
     };
 };
      
@@ -41,7 +44,7 @@ export const Form5 = () => {
     
     <div className = 'zonaForm' id='contacto'>
     <h2> Mantengámonos en contacto </h2>
-    <Form onSubmit = {handleForm}>
+    <Form onSubmit = { handleForm }>
     
 
 

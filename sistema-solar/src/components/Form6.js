@@ -22,20 +22,14 @@ export function Form6() {
      console.log(stateSub);
      alert ( "Los siguientes datos han sido ingresados a la base de datos:" + JSON.stringify(values));
         Swal.fire({
-            title: '<strong>Mensaje enviado con éxito</strong>',
+            title: '<strong>Usted se suscribió con éxito</strong>',
             icon: 'success',
             html:
-              '¿Desearía suscribirse al newsletter?',
+              'Gracias por ser parte de la Enciclopedia Galáctica!',
             showCloseButton: true,
-            showCancelButton: true,
+            showCancelButton: false,
             focusConfirm: false,
-            confirmButtonText:
-              '<i class="fa fa-thumbs-up"></i> Sí, deseo suscribirme',
-            confirmButtonAriaLabel: 'Thumbs up, great!',
-            cancelButtonText:
-              '<i class="fa fa-thumbs-down">No quiero suscribirme</i>',
-            cancelButtonAriaLabel: 'Thumbs down'
-          }) 
+        })
         }
     });
 
@@ -44,7 +38,7 @@ export function Form6() {
   return (
     
     <div className = 'zonaForm' id='contacto'>
-    <h2> Mantengámonos en contacto </h2>
+    <h2> Suscribirse al Newsletter </h2>
 
     <Form onSubmit = { onSubmit } id="formulario">
 
@@ -102,13 +96,13 @@ export function Form6() {
         <Form.Label id = "labelComentario">Comentario</Form.Label>
         <Form.Control 
           type="textarea" 
-          placeholder="Déjenos su mensaje" 
+          placeholder="Déjenos su mensaje (opcional)" 
           id= "comentario" 
           {...register('comentario')} />
         </Form.Group>
 
         <Button type= "submit">
-          Enviar
+          Inscribirme
         </Button>
     </Form>
 

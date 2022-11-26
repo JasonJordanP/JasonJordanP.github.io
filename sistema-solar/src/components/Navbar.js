@@ -17,7 +17,7 @@ export function NavbarDarkExample() {
           >
             <Nav.Link href="/PlanetasSistemaSolar">Planetas del Sistema Solar</Nav.Link>
             <Nav.Link href="/Video">Video</Nav.Link>
-            <Nav.Link href="/Contactenos">Contáctenos</Nav.Link>
+            <Nav.Link href="/Contactenos">Suscribirse al Newsletter</Nav.Link>
     
           </Nav>
           <Form className="d-flex">

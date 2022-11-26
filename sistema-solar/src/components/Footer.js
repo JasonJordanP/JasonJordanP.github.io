@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { MDBFooter, MDBContainer, MDBIcon, MDBBtn, MDBCol, MDBRow } from 'mdb-react-ui-kit';
+import '../stylesheets/footer.css'
 
 export function Footer() {
   return (
@@ -46,7 +47,7 @@ export function Footer() {
             <ul className='list-unstyled mb-0'>
               <li>
                 <a href='/Contactenos' className='text-light'>
-                   Contáctenos
+                   Newsletter
                 </a>
               </li>
             </ul>
@@ -60,7 +61,7 @@ export function Footer() {
           <MDBBtn
             floating
             className='m-1'
-            style={{ backgroundColor: '#3b5998' }}
+            style={{ backgroundColor: '#3b5998'}}
             href='https://facebook.com'
             role='button'
           >
