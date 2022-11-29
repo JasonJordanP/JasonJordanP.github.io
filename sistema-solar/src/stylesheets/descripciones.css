@@ -39,3 +39,10 @@
     text-align: justify;
     display: flex;
 }
+strong {
+    color: beige;
+}
+#planetas {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}

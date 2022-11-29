@@ -17,6 +17,13 @@ h1 {
     margin: 40px 120px;
     text-align: center;
 }
+#icon {
+    margin-left: 7px;
+    margin-bottom: 5px;
+}
+#vialactea {
+    margin-top: 1em;
+}
 h2 {
     color: #deddea;
     font-weight: bold;
@@ -47,6 +54,7 @@ h2 {
     border-style:ridge;
     border-radius: 10px;
     border-color: #9c64a8;
+    margin-top: 3em;
     padding: 3em;
     display: inline-block;
     flex-wrap: wrap;
@@ -80,7 +88,7 @@ body {
 .navbar {
     padding: 0px;
     margin-top: 0px;
-    margin-bottom: 2em;
+    margin-bottom: 0px;
     margin-right: 0px;
     width: 100vw;
     display: flex;
@@ -88,23 +96,28 @@ body {
 div.navbar {
     margin-top: 0px;
     padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: red;
 }
 
-a.navbar-brand {
+.navbar-light .navbar-brand {
     color: white;
 }
-a.nav-link {
+.navbar-expand-lg .navbar-nav .nav-link {
     color: white;
     margin-left: 15px;
     margin-right: 15px;
+    margin-top: 10px;
 }
-a.nav-link:hover{
-    color: red;
+.nav-link:hover{
+    color: rgb(255, 46, 46);
+   
 }
-a.nav-link:visited{
-    color:#9c64a8;
+.nav-link:visited{
+    color:#f6d0ff;
 }
-a.nav-link:active{
+.nav-link:active{
     color:#4153f5;
 }
 input.form-control{
@@ -122,8 +135,8 @@ button.btn.btn-outline-success {
     -ms-flex-align: center;
 }
 .video:hover{
-    background: #4153f5;
-    box-shadow: 0 0 3px #4153f5, 0 0 10px #4153f5, 0 0 10px #4153f5;
+    background: red;
+    box-shadow: 0 0 10px red, 0 0 10px red, 0 0 10px red;
 }
 .links {
     margin-top: 1em;
@@ -150,7 +163,37 @@ footer {
     text-align: center;
     align-items: center;
     justify-content: center;
+    justify-self: center;
+    margin-left: 8em;
+    margin-right: 8em;
 }
 #labelComentario {
     color: whitesmoke;
+}
+#slider {
+    height: 60vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#newsletter {
+    align-self: right;
+    margin-left: 15em;
+    color: white;
+    font-weight: 500;
+    font-size: larger;
+    background-color: grey;
+    border-radius: 10px;
+}
+a.navbar-brand {
+    margin-left: 30px;
+}
+a.nav-link {
+    width: max-content;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    height: fit-content;
 }

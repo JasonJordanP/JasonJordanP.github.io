@@ -1,0 +1,48 @@
+[
+
+{
+  "imagen": "enanasblancas",
+  "captitle": "Enanas blancas",
+  "caption": "Son los objetos en los que se convierten la mayoría de las estrellas después de agotar el hidrógeno que las alimenta. Su tamaño es aproximadamente el de la Tierra, pero su masa se parece más a la del Sol."
+},
+{
+  "imagen": "nebulosa",
+  "captitle": "Nebulosas",
+  "caption": "Son regiones del medio interestelar constituidas por gases (principalmente hidrógeno y helio) además de elementos químicos en forma de polvo cósmico. Muchas de ellas son los lugares donde nacen las estrellas por fenómenos de condensación y agregación de la materia."
+},
+{
+  "imagen": "agujeronegro",
+  "captitle": "Agujero negro",
+  "caption": "Es una región finita del espacio en cuyo interior posee una concentración de masa lo suficientemente elevada como para generar un campo gravitatorio tal, que ninguna partícula –ni siquiera la luz–puede escapar de él."
+},
+{
+  "imagen": "giganteroja",
+  "captitle": "Gigante roja",
+  "caption": "Es una estrella gigante de masa baja o intermedia que comienza a quemar hidrógeno. Esto genera un aumento de su volumen y un enfriamiento de su superficie, por lo que su exterior se torna rojizo."
+},
+{
+  "imagen": "luna",
+  "captitle": "La luna",
+  "caption": "Es el único satélite natural de la Tierra. Con un diámetro de 3474.8 km, es el quinto satélite más grande del sistema solar. A pesar de ser, en apariencia, un objeto muy brillante su superficie es en realidad muy oscura, similar al carbón."
+},
+{
+  "imagen": "cometa",
+  "captitle": "Cometa",
+  "caption": "Es un cuerpo celeste constituido por polvo, rocas y partículas de hielo que orbita alrededor del Sol siguiendo diferentes trayectorias elípticas."
+},
+{
+  "imagen": "planetasenanos",
+  "captitle": "Planetas Enanos",
+  "caption": "Son cuerpos celestes que no pueden ser categorizados como planetas por su reducido tamaño. Se encuentran en la órbita de una estrella, no son satélites de otros planetas, y comparten su órbita con otros objetos."
+},
+{
+  "imagen": "estrella",
+  "captitle": "Las estrellas",
+  "caption": "Es un esferoide luminoso que mantiene su forma debido a su propia gravedad. Brillan debido a la fusión termonuclear del hidrógeno en helio en su núcleo, que libera energía que luego se irradia hacia el espacio exterior. "
+},
+{
+  "imagen": "sol",
+  "captitle": "El Sol",
+  "caption": "Es una estrella de tipo-G de la secuencia principal y clase de luminosidad V, que constituye la mayor fuente de radiación electromagnética de este sistema planetario. Se formó hace aproximadamente 4600 millones de años."
+}
+]

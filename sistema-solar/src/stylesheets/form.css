@@ -16,9 +16,17 @@
 #contacto {
     margin-bottom: 4em;
 }
+#botonInscribirse {
+    color: #333666;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    background-color: #d49dc4;
+    border-color: #d49dc4;
+    border-style: groove;
+}
 
 strong {
-    color: black;
+    color: rgb(161, 161, 161);
 }
 
 #obligatorios {

@@ -8,6 +8,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavbarDarkExample } from './components/Navbar';
 import { VideoSistema } from './components/Video.js';
 import { Footer } from './components/Footer.js';
+import { GaleriaCosmica } from './components/GaleriaCosmica';
+
 
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
             <Route path= '/' element = {<Home />} />
             <Route path= '/PlanetasSistemaSolar' element = {<InfoPlanetas />} />
             <Route path= '/Video' element = {<VideoSistema />} />
+            <Route path= '/Galeria' element = {<GaleriaCosmica />} />
             <Route path= '/Contactenos' element = {<Form6  />} />
         </Routes>
 

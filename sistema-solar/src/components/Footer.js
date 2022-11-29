@@ -46,6 +46,17 @@ export function Footer() {
 
             <ul className='list-unstyled mb-0'>
               <li>
+                <a href='/Galeria' className='text-light'>
+                  Galería
+                </a>
+              </li>
+            </ul>
+          </MDBCol>
+
+          <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
+
+            <ul className='list-unstyled mb-0'>
+              <li>
                 <a href='/Contactenos' className='text-light'>
                    Newsletter
                 </a>

@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import '../stylesheets/form.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
 
@@ -11,11 +11,22 @@ export function Form6() {
     const { register, formState: { errors }, handleSubmit } = useForm();
     const [stateSub, setStateSub] = useState (false);
 
+    useEffect ( () => {
+
+      const response = { nombre: "", apellido: "", mail:"", comentario:"" };
+    
+      console.log (response);
+     }, []);
+
+  
+
     const onSubmit = handleSubmit ( (values) => {
-        console.log (values) 
+        
+        console.log (values); 
         if (setStateSub === "false") {
             setStateSub(true);
-            console.log(stateSub); 
+            console.log(stateSub);
+             
           }
     else {
      setStateSub(false);
@@ -32,7 +43,9 @@ export function Form6() {
         })
         }
     });
-
+    
+   
+  
     
 
   return (
@@ -101,7 +114,7 @@ export function Form6() {
           {...register('comentario')} />
         </Form.Group>
 
-        <Button type= "submit">
+        <Button type= "submit" id= "botonInscribirse">
           Inscribirme
         </Button>
     </Form>
