@@ -9,6 +9,7 @@ import { NavbarDarkExample } from './components/Navbar';
 import { VideoSistema } from './components/Video.js';
 import { Footer } from './components/Footer.js';
 import { GaleriaCosmica } from './components/GaleriaCosmica';
+import './stylesheets/reset.css';
 
 
 

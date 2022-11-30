@@ -36,13 +36,14 @@
   "caption": "Son cuerpos celestes que no pueden ser categorizados como planetas por su reducido tamaño. Se encuentran en la órbita de una estrella, no son satélites de otros planetas, y comparten su órbita con otros objetos."
 },
 {
-  "imagen": "estrella",
-  "captitle": "Las estrellas",
-  "caption": "Es un esferoide luminoso que mantiene su forma debido a su propia gravedad. Brillan debido a la fusión termonuclear del hidrógeno en helio en su núcleo, que libera energía que luego se irradia hacia el espacio exterior. "
-},
-{
   "imagen": "sol",
   "captitle": "El Sol",
   "caption": "Es una estrella de tipo-G de la secuencia principal y clase de luminosidad V, que constituye la mayor fuente de radiación electromagnética de este sistema planetario. Se formó hace aproximadamente 4600 millones de años."
+},
+{
+  "imagen": "estrella",
+  "captitle": "Las estrellas",
+  "caption": "Es un esferoide luminoso que mantiene su forma debido a su propia gravedad. Brillan debido a la fusión termonuclear del hidrógeno en helio en su núcleo, que libera energía que luego se irradia hacia el espacio exterior. "
 }
+
 ]

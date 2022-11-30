@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
+import '../stylesheets/reset.css';
 
 export function VideoSistema () {
     return (

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../stylesheets/galeria.css';
 import dataGaleria from '../dataGaleria.json';
+import '../stylesheets/reset.css';
 
 export const Gallery = ( ) => {
      

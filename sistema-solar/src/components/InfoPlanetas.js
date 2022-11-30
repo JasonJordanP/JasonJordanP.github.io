@@ -1,6 +1,7 @@
 import { Planetas } from './Planetas';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../stylesheets/descripciones.css';
+import '../stylesheets/reset.css';
 
 
 export function InfoPlanetas () {

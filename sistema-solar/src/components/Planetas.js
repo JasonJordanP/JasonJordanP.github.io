@@ -1,6 +1,7 @@
 import React from 'react';
 import '../stylesheets/descripciones.css';
 import data from "../data.json"
+import '../stylesheets/reset.css';
 
 
  export const Planetas = ( ) =>   {

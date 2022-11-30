@@ -14,8 +14,8 @@ a.text-light {
     width: fit-content;
     text-align: justify;
     align-self: center;
-    margin-left: 4em;
-    margin-right: 3em;
+    margin-left: 3em;
+    margin-right: 2.5em;
 }
 li {
     display: flex;

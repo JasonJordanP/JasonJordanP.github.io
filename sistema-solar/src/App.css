@@ -51,9 +51,10 @@ h2 {
     text-align: center;
 }
 .zonaForm {
-    border-style:ridge;
+    
     border-radius: 10px;
     border-color: #9c64a8;
+    border-style: ridge;
     margin-top: 3em;
     padding: 3em;
     display: inline-block;
@@ -178,10 +179,11 @@ footer {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    max-width: max-content;
 }
 #newsletter {
     align-self: right;
-    margin-left: 15em;
+    margin-left: 10em;
     color: white;
     font-weight: 500;
     font-size: larger;

@@ -3,49 +3,54 @@ import Form from 'react-bootstrap/Form';
 import '../stylesheets/form.css';
 import React, { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
+import { useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2';
+import '../stylesheets/reset.css';
+
 
 export function Form6() {
 
 
     const { register, formState: { errors }, handleSubmit } = useForm();
     const [stateSub, setStateSub] = useState (false);
+    const navigate = useNavigate();
 
-    useEffect ( () => {
+    useEffect(() => {
+      console.log( "En proceso de suscripción");
+      if (stateSub === true) {
+        console.log( "Suscripción exitosa");
+      };
+    }, [stateSub]);
 
-      const response = { nombre: "", apellido: "", mail:"", comentario:"" };
-    
-      console.log (response);
-     }, []);
-
-  
 
     const onSubmit = handleSubmit ( (values) => {
         
-        console.log (values); 
-        if (setStateSub === "false") {
-            setStateSub(true);
+        console.log (values);
+
+        if (stateSub === true) {
+
             console.log(stateSub);
-             
-          }
-    else {
-     setStateSub(false);
-     console.log(stateSub);
-     alert ( "Los siguientes datos han sido ingresados a la base de datos:" + JSON.stringify(values));
-        Swal.fire({
-            title: '<strong>Usted se suscribió con éxito</strong>',
-            icon: 'success',
-            html:
-              'Gracias por ser parte de la Enciclopedia Galáctica!',
-            showCloseButton: true,
-            showCancelButton: false,
-            focusConfirm: false,
-        })
+            setStateSub(false)
+        } else {
+          setStateSub(true);
+          console.log(stateSub);
+          alert ( "Los siguientes datos han sido ingresados a la base de datos:" + JSON.stringify(values));
+              const Toast = Swal.mixin({
+                toast: true,
+                title: '<strong>Usted se suscribió con éxito</strong>',
+                icon: 'success',
+                html: 'Gracias por ser parte de la Enciclopedia Galáctica!',
+                didOpen: (toast) => {
+                        toast.addEventListener('click', navigate('/'))},
+                showCloseButton: false,
+                showCancelButton: false,
+              })
+              Toast.fire({
+                icon: 'success',
+              })
         }
     });
-    
-   
-  
+
     
 
   return (
@@ -114,7 +119,7 @@ export function Form6() {
           {...register('comentario')} />
         </Form.Group>
 
-        <Button type= "submit" id= "botonInscribirse">
+        <Button type= "submit" id= "botonInscribirse" >
           Inscribirme
         </Button>
     </Form>
