@@ -1,29 +1,27 @@
-	.caption-style-1{
-		list-style-type: none;
-		margin: 0px;
-		padding: 0px;
-		
-	}
+.caption-style-1{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
 
-	.caption-style-1 li{
-		float: left;
-		padding: 0px;
-		position: relative;
-		overflow: hidden;
-	}
+.caption-style-1 li{
+	float: left;
+	padding: 0px;
+	position: relative;
+	overflow: hidden;
+}
 
-	.caption-style-1 li:hover .caption{
-		opacity: 1;
+.caption-style-1 li:hover .caption{
+	opacity: 1;
 
-	}
+}
 
-
-	.caption-style-1 img{
-		margin: 0px;
-		padding: 0px;
-		float: left;
-		z-index: 4;
-	}
+.caption-style-1 img{
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	z-index: 4;
+}
 
 .caption-style-1 .caption{
 	cursor: pointer;
@@ -54,10 +52,18 @@ img.gallery-image {
     margin-bottom: 1em;
 	width: max-content;
 	color: white;
-	display: grid;
+	display: flex;
 	align-items: center;
-	margin-right: 10em;
-	margin-left: 10em;
+	margin-right: 0px;
+	margin-left: 0px;
+	align-content: center;	
+}
+.contenedortitulo {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .caption-style-1 .caption-text h1{
 	text-transform: uppercase;

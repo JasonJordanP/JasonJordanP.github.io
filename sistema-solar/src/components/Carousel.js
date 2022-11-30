@@ -18,7 +18,7 @@ export function Carrusel() {
         <img
           id="slider"
           className="d-block w-100"
-          src="https://fotos.perfil.com/2022/07/12/trim/950/534/imagenes-del-telescopio-espacial-james-webb-de-la-nasa-20220712-1385403.jpg"
+          src="https://www.infobae.com/new-resizer/Cx548U38NtgdOwnz_wZKz5JsrbA=/768x432/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/D6D7ZS7MTFD2PAFC4BG5KQVIUA.jpg"
           alt="Second slide"
         />
       </Carousel.Item>
@@ -26,7 +26,7 @@ export function Carrusel() {
         <img
           id="slider"
           className="d-block w-100"
-          src="https://tn.com.ar/resizer/aw4sC33vhqzMACA4dTgKRBRRDCg=/1440x0/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/artear/XMDNFOKVGBAU3KKFOV4S37CA4Y.png"
+          src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2022/10/ultima-imagen-james-webb-nasa-tiene-locos-astronomos-como-radiografia-2855335.jpg?itok=MUhVEdaT"
           alt="Third slide"
         />
       </Carousel.Item>

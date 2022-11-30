@@ -8,8 +8,9 @@ import { Carrusel } from '../components/Carousel.js';
 export const Home = () => {
     return (
         <>
-
+            <div className="containercarousel">
             <Carrusel/>
+            </div>
 
             <h1 id='vialactea'>ENCICLOPEDIA GALÁCTICA</h1>
             <div>

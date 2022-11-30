@@ -101,7 +101,6 @@ div.navbar {
     padding-bottom: 0px;
     color: red;
 }
-
 .navbar-light .navbar-brand {
     color: white;
 }
@@ -174,12 +173,17 @@ footer {
 #slider {
     height: 60vh;
     min-height: 300px;
+    width: 100%;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    max-width: max-content;
+    background-size: cover;   
+}
+.containercarousel {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 #newsletter {
     align-self: right;

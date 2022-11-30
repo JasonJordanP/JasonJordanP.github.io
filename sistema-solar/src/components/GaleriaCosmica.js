@@ -8,9 +8,10 @@ export function GaleriaCosmica () {
 
     return (
         <>
+        <div className='contenedortitulo'>
         <h1 id='titulogaleria'>GALERÍA INTERACTIVA</h1>
-        <br>
-        </br>
+        </div>
+
         <Gallery/>
         </>
     )
